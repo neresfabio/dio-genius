@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background-color: aquamarine;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    gap: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 600px;
+    height: 600px; 
+}
+.green{
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%; 
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.red{
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.yellow{
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.blue{
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.selected{
+    opacity: 0.3;
+}
